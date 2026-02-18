@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Automotive Spares Hunters</title>
+
+    <style>
+        body{
+            background: linear-gradient(135deg, #0B132B, #1C2541);
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .container{
+            margin: 20px 8%;
+            background: #F5F7FA;
+            border-radius: 12px;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.4);
+            padding: 20px;
+        }
+
+        header{
+            background: linear-gradient(120deg, #0B132B, #1C2541);
+            color: white;
+            padding: 30px;
+            border-radius: 12px;
+        }
+
+        header h1{
+            margin: 0;
+            font-size: 40px;
+            color: #FCA311;
+        }
+
+        header p{
+            margin-top: 8px;
+            font-size: 18px;
+            color: #00E5FF;
+        }
+
+        nav{
+            margin-top: 15px;
+            background: #0B132B;
+            padding: 12px;
+            border-radius: 10px;
+            text-align: center;
+        }
+
+        nav a{
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+            padding: 8px 14px;
+            border-radius: 6px;
+        }
+
+        nav a:hover{
+            background: #FCA311;
+            color: #0B132B;
+        }
+
+        .hero{
+            margin-top: 20px;
+        }
+
+        .hero img{
+            width: 100%;
+            height: 320px;
+            object-fit: cover;
+            border-radius: 12px;
+        }
+
+        section{
+            margin-top: 25px;
+            background: white;
+            padding: 20px;
+            border-radius: 12px;
+            border-left: 6px solid #FCA311;
+        }
+
+        section h2{
+            margin-top: 0;
+            color: #0B132B;
+        }
+
+        .steps{
+            display: flex;
+            gap: 15px;
+        }
+
+        .step{
+            flex: 1;
+            background: #F5F7FA;
+            padding: 15px;
+            border-radius: 10px;
+            text-align: center;
+        }
+
+        .cards{
+            display: flex;
+            gap: 20px;
+        }
+
+        .card{
+            flex: 1;
+            text-align: center;
+        }
+
+        .card img{
+            width: 100%;
+            height: 150px;
+            object-fit: cover;
+            border-radius: 10px;
+        }
+
+        .cta{
+            background: linear-gradient(120deg, #FCA311, #ffba42);
+            color: #0B132B;
+            text-align: center;
+            padding: 30px;
+            border-radius: 12px;
+            margin-top: 25px;
+            font-size: 20px;
+            font-weight: bold;
+        }
+
+        footer{
+            margin-top: 25px;
+            background: #0B132B;
+            color: white;
+            text-align: center;
+            padding: 15px;
+            border-radius: 10px;
+            font-size: 14px;
+        }
+
+@media(max-width: 768px){
+    .container{
+        margin: 10px;
+    }
+
+    .steps, .cards{
+        flex-direction: column;
+    }
+
+    nav a{
+        display: block;
+        margin: 8px 0;
+    }
+
+h1, h2, h3{
+    letter-spacing: 1px;
+   }
+
+h2{
+    font-size: 28px;
+    position: relative;
+   }
+
+h2::after{
+    content: "";
+    width: 60px;
+    height: 4px;
+    background: #FCA311;
+    display: block;
+    margin-top: 6px;
+    border-radius: 2px;
+   }
+
+    </style>
+</head>
+
+<body>
+<div class="container">
+
+    <header>
+        <h1>Automotive Spares Hunters</h1>
+        <p>Helping drivers find hard to get SPARE PARTS — fast and stress free.</p>
+      
+    </header>
+
+    <nav>
+        <a href="#how">How It Works</a>
+        <a href="#parts">Spare Parts</a>
+        <a href="#why">Why Us?</a>
+    </nav>
+
+    <div class="hero">
+        <img src="images/hero-car.jpg" alt="Automotive workshop">
+<section>
+    <h2>Find a Spare Part</h2>
+
+    <form>
+        <input type="text" placeholder="Car Model (e.g. Toyota Hilux)" required
+        style="width:45%; padding:10px; margin:5px; border-radius:6px; border:1px solid #ccc;">
+
+        <input type="text" placeholder="Part Needed (e.g. Alternator)" required
+        style="width:45%; padding:10px; margin:5px; border-radius:6px; border:1px solid #ccc;">
+
+        <br><br>
+
+        <button style="
+        background:#FCA311;
+        border:none;
+        padding:12px 25px;
+        font-size:16px;
+        font-weight:bold;
+        border-radius:8px;
+        cursor:pointer;">
+            Search Parts
+        </button>
+    </form>
+
+</section>
+
+    </div>
+
+    <section id="how">
+        <h2>GUIDE</h2>
+        <div class="steps">
+            <div class="step">
+                <h3>1 Search</h3>
+                <p>Enter your vehicle model and the part you need.</p>
+            </div>
+            <div class="step">
+                <h3>2 Scout</h3>
+                <p>We check local and regional spare parts suppliers.</p>
+            </div>
+            <div class="step">
+                <h3>3 Connect</h3>
+                <p>You get leads to available spare parts quickly.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="parts">
+        <h2>Popular Spare Parts</h2>
+        <div class="cards">
+            <div class="card">
+                <img src="images/engine.jpg">
+                <p><b>Engine & Transmission</b></p>
+            </div>
+            <div class="card">
+                <img src="images/brakes.jpg">
+                <p><b>Brakes & Suspension</b></p>
+            </div>
+            <div class="card">
+                <img src="images/electrical.jpg">
+                <p><b>Electrical & Lighting</b></p>
+            </div>
+        </div>
+    </section>
+
+    <section id="why">
+        <h2>Why Automotive Spares Hunters?</h2>
+        <ul>
+            <li>✔ Saves time searching multiple shops</li>
+            <li>✔ Helps find rare and discontinued parts</li>
+            <li>✔ Supports local and regional suppliers</li>
+            <li>✔ Designed For Botswana Market</li>
+        </ul>
+    </section>
+
+    <div class="cta">
+        Can’t find a spare part? Let us hunt it for you.
+    </div>
+
+    <footer>
+        Automotive Spares Hunters © 2026 | Peter Mpofu
+    </footer>
+
+</div>
+</body>
+</html>
+
+
